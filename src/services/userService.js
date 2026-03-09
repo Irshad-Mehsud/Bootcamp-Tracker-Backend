@@ -2,7 +2,7 @@ import User from "../models/User.js";
 import { ApiError } from "../utils/ApiError.js";
 
 
-const registerUser = async (userData) => {
+const addUser = async (userData) => {
     try {
         const user = new User(userData);
         await user.save();
@@ -60,7 +60,7 @@ const getAllUsers = async () => {
 };
 
 export default {
-    registerUser,
+    addUser,
     loginUser,
     updateUser,
     getUserProfile,

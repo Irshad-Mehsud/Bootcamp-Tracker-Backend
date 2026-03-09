@@ -7,7 +7,7 @@ import { Router } from 'express';
 
 const router = Router();
 
-router.post("/register", userController.registerUserController);
+router.post("/add-user", userController.addUserController);
 router.post("/login", userController.loginUserController);
 router.put("/update/:id", userController.updateUserController);
 router.get("/profile", userController.getUserProfileController);

@@ -46,12 +46,13 @@ const bootcampSchema = new mongoose.Schema(
       }
     ],
 
-    domains: [
-      {
-        type: mongoose.Schema.Types.ObjectId,
-        ref: "Domain"
-      }
-    ]
+domains: [
+  {
+    type: String,
+    required: true,
+    trim: true
+  }
+],
   },
   {
     timestamps: true
